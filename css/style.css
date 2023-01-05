@@ -12,7 +12,7 @@ a{
     color: black;
     text-decoration: none;
 }
-
+/* nav */
 nav{
    
     display: flex;
@@ -76,9 +76,110 @@ nav{
             .lien a{
                width: 49%;
               text-align: center;
+              border-bottom:1px solid #d9d9d9 ;
             }
        .lien :hover{
         border-top: 2px solid transparent;
         border-bottom:2px solid  #0065fc;
        }
 }
+
+/* header */
+
+
+/* search */
+.wrapper{
+    max-width: 1400px;
+    margin:auto;
+    padding: 0 2rem;
+    flex-wrap: wrap;
+}
+
+.search{
+    display:flex;
+    
+}
+
+.search a i{
+    padding :0.8rem ;
+    background-color: #d9d9d9;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.search input{
+    padding-right: 6rem;
+    border: 2px #d9d9d9
+}
+
+.search button{
+    background-color: #0065fc;
+    border-radius: 0 1rem 1rem 0;
+    border: 1px #0065fc;
+    color: aliceblue;
+}
+
+.loupe{
+    color: transparent;
+    font-size: 17px;
+   }
+
+@media (max-width:768px) {
+    .search{
+     display: flex;
+     justify-content: center;
+
+    }
+
+    .search input{
+        display: flex;
+        
+        
+    }
+    
+    .search button{
+        width: 3rem; 
+    }
+
+    .loupe{
+        color: aliceblue;
+       
+    }  
+    
+    .recherche{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+/* filtre */
+
+.filtre{
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+
+}
+
+.filtre h1{
+    font-size: 18px ;
+}
+    .filtre i{
+        color: #0065fc;
+        padding:0 0.5rem;
+    }
+
+        .filtre1{
+            border: 1px solid red;
+            display: flex;
+            align-items: center;
+            border-radius: 25px;
+            padding: 0 1rem;
+            
+        }
+        
