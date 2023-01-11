@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,55 +13,119 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>booki</title>
 </head>
-<body>
-     <nav class="container">
-         <a class="logo" href="#"><img src="images+booki/Images Booki/logo/Booki.png" alt="logo booki"></a>
-         
-         <div class="lien">
-             <a  href="#">Hébergement</a>
-             <a  href="#">Activités</a>
-         </div>
-     </nav>
 
-     <header class="wrapper">
+<body>
+    <nav class="container">
+        <a class="logo" href="#"><img src="images_booki/ImagesBooki/logo/Booki.png" alt="logo booki"></a>
+
+        <div class="lien">
+            <a href="#">Hébergement</a>
+            <a href="#">Activités</a>
+        </div>
+    </nav>
+
+    <header class="wrapper">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre-ville ou en pleine nature</p>
 
-       <div class="search">
-        <a href="#"><i class="fa-solid fa-location-dot"></i></a>
-        <input type="text" placeholder="Marseille,France">
-        <button><span class="recherche">Rechercher</span> <span class="loupe"><i class="fa-solid fa-magnifying-glass"></i></span></button>
-        </div>
-        
-        <div class="filtre">
-        <h1>Filtres</h1> 
-        
-       
-        <div class="filtre1">
-            
-            <i class="fa-solid fa-money-bill-wave"></i> <span><strong>Economique</strong></span> 
-        
-        </div>
-        <div class="filtre1">
-            
-           <a href="#"> <i class="fa-solid fa-person"></i> <span><strong>Familial</strong></span> </a>
-        
+
+        <form class="search">
+            <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+            <input type="text" placeholder="Marseille,France">
+            <button>
+                <span class="form-btn_desktop">Rechercher</span>
+                <i class="form-btn_mobile fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+
+
+
+        <div class="filter_box">
+            <h2>Filtres</h2>
+            <ul class="ul_filter">
+                <div class="filter_1">
+                    <il class="filter"><a href="#"><i class="fa-solid fa-money-bill-wave"></i>
+                            <span>Economique</span></a></il>
+                    <il class="filter"><a href="#"> <i class="fa-solid fa-person"></i> <span>Familial</span></a></il>
+                </div>
+                <div class="filter_2">
+                    <il class="filter"><a href="#"> <i class="fa-solid fa-heart"></i> <span>Romantique</span></a></il>
+                    <il class="filter"><a href="#"> <i class="fa-solid fa-dog"></i> <span>Animaux autoriser</span></a>
+                    </il>
+                </div>
+            </ul>
         </div>
 
-        <div class="filtre1">
-            
-           <a href="#"> <i class="fa-solid fa-heart"></i> <span><strong>Romantique</strong></span> </a>
-        
+        <div class="info">
+            <i class="fa-solid fa-info"></i>
+            <sapn>Plus de 500 logements sont disponibles dans cette ville </sapn>
         </div>
-        <div class="filtre1">
-            
-            <a href="#"> <i class="fa-solid fa-dog"></i> <span><strong>Animaux autoriser</strong></span> </a> 
-        
+
+    </header>
+
+
+    <main>
+        <section class="list">
+            <div class="city">
+                <h2>Hébergement à Marseille</h2>
+            </div>
+
+            <div class="popular">
+                <ul>
+                    <il class="p_graph">
+                        <h2>Les plus populaires</h2> <span class="graph"><i class="fa-solid fa-chart-line"></i></span>
+                    </il>
+                       <div class="box_anonce">
+                    <il><a href="#">
+                            <div class="anonce_p">
+                                <img src="images_booki/ImagesBooki/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                                    alt="hôtel le soleil du matin">
+                        </a><a href="#">
+                            <div class="popular_description">
+                                <h3>Hôtel Le Soleil du matin</h3>
+                                <p class="popular_price">Nuit à partir de 128€</p> </div>
+                                <p class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><span
+                                        class="star_2"><i class="fa-solid fa-star"></i></span></p>
+                            
+            </div></a>
+            </il>
+            <il><a href="#">
+                    <div class="anonce_p">
+                        <img src="images_booki/ImagesBooki/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                            alt="Chambres d'hôtes Au coeur de l'eau">
+                </a><a href="#">
+                    <div class="popular_description">
+                        <h3>Chambres d'hôtes Au coeur de l'eau</h3>
+                        <p class="popular_price">Nuit à partir de 71€</p></div>
+                        <p class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><span class="star_2"><i
+                                    class="fa-solid fa-star"></i></span></p>
+                    
+                    </div>
+                </a>
+            </il>
+            <il><a href="#">
+                    <div class="anonce_p">
+                        <img src="images_booki/ImagesBooki/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                            alt="Hôtel Bleu et Blanc">
+                </a><a href="#">
+                    <div class="popular_description">
+                        <h3>Hôtel Bleu et Blanc</h3>
+                        <p class="popular_price">Nuit à partir de 68€</p></div>
+                        <p class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><span class="star_2"><i
+                                    class="fa-solid fa-star"></i></span></p>
+                    
+                    </div>
+                </a>
+            </il>
         </div>
-     
-    
-    
-    </header> 
-     
+            </ul>
+            </div>
+        </section>
+    </main>
+
 </body>
+
 </html>
