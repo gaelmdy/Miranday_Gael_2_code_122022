@@ -375,15 +375,11 @@ button span {
 }
 
 .popular_description {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    display: inline;
-    align-items: flex-start;
-    padding: 0%;
-    gap: 7px;
-    width:206px ;
-    height: 144px;
+    justify-content: space-between;
+
 }
 
 il h3{
@@ -397,11 +393,8 @@ il h3{
 .stars {
     color: #0065fc;
     display: flex;
-    padding-top: 19%;
-
 }
-
-.star_2 {
+.star_grey {
     color: #d9d9d9;
 }
 
