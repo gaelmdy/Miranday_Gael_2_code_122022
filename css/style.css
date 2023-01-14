@@ -3,8 +3,6 @@
     font-family: "Raleway";
 }
 
-
-
 a {
     color: black;
     text-decoration: none;
@@ -22,7 +20,6 @@ nav {
     align-items: center;
     justify-content: flex-end;
     flex-wrap: wrap;
-
 }
 
 nav img {
@@ -36,28 +33,22 @@ nav img {
     display: block;
     margin-right: auto;
     flex-wrap: wrap;
-
 }
 
-
-
 .lien {
-
     display: flex;
     flex-direction: row;
     gap: 2px;
     display: block;
     flex-wrap: wrap;
-
+    border: solid 2px transparent;
 }
 
 .lien a {
-
     padding: 2rem;
     display: flex;
     display: inline-block;
-
-
+    border: solid 2px transparent;
 }
 
 .lien :hover {
@@ -65,18 +56,13 @@ nav img {
     border-top: 2px solid #0065fc;
 }
 
-
-
 @media(max-width:768px) {
     .logo {
         margin-right: 42%;
     }
 
-
     .lien {
         width: 100%;
-
-
     }
 
     .lien a {
@@ -115,7 +101,7 @@ nav img {
 
 .search input {
     padding-right: 6rem;
-    border: 2px #d9d9d9
+    border: 4px #d9d9d9
 }
 
 .search button {
@@ -157,8 +143,6 @@ button span {
         display: none;
     }
 }
-
-
 
 
 
@@ -222,7 +206,7 @@ button span {
     padding: 0 1rem 0 0;
 }
 
-.filter_box ul il :hover {
+.filter_box ul li :hover {
     background-color: #deebff;
     border-radius: 25px;
 }
@@ -309,10 +293,9 @@ button span {
 }
 
 .city {
-    border: 1px solid red;
     background-color: #d9d9d9;
     flex-basis: 66%;
-    border-radius: 1rem;
+    border-radius: 25px;
 }
 
 .city h2 {
@@ -320,6 +303,7 @@ button span {
 }
 
 .popular {
+    border: 1px solid blue;
     background-color: #d9d9d9;
     flex-basis: 33%;
     border-radius: 25px;
@@ -327,116 +311,74 @@ button span {
     flex-direction: row;
 }
 
-
-
-
 @media(max-width:992px) {
     .list {
         flex-direction: column;
     }
-
-
 }
 
-/*popular*/
-.graph {
-    color: #0065fc;
-
+/*city*/
+.cards article {
+    box-sizing: border-box;
 }
 
-.p_graph {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-}
-
-.anonce_p {
-
+.cards {
+    width: 15.375rem;
+    height: 12.438rem;
     background-color: white;
-    display: grid;
-    max-width: 21.438rem;
-    max-height: 9rem;
-    grid-template-columns: 1fr 2fr;
-    border-radius: 25px;
-    margin-right: 2rem;
-    margin-bottom: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
 }
 
-
-.anonce_p img {
-
-    height: 9rem;
-    width: 8.563rem;
-    border: solid 5px white;
-    border-radius: 25px 0 0 25px;
-    display: flex;
-    justify-content: flex-start;
+.img_h img {
+    width: 15.37rem;
+    height: 7.7rem;
+    border-top: solid 5px white;
+    border-left: solid 5px white;
+    border-right: solid 5px white;
+    border-radius: 1rem 1rem 0 0;
 }
 
-.popular_description {
+.description_h {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-
-}
-
-il h3{
-    font-size: 1rem;
-}
-
-.popular_price {
-    margin-top: -1rem;
+    display: block;
+    padding-right: 1rem;
 }
 
 .stars {
     color: #0065fc;
-    display: flex;
+    padding: 0%;
+    margin: 0%;
+    padding-left: 1rem;
+    
 }
+
 .star_grey {
     color: #d9d9d9;
 }
 
-@media(max-width:992px) {
-    .popular ul {
-        padding: 0%;
-        width: 100%;
-    }
-
-    .popular .p_graph {
-        display: grid;
-        grid-template-columns: 95% 30%;
-
-    }
-
-    .popular .box_anonce {
-        display: grid;
-        grid-template-columns: 33% 33% 33%;
-    }
-
-
+.stars li {
+    display: inline;
 }
 
-@media(max-width:768px) {
-    .popular {
-        order: -1;
-    }
+.description_h h3 {
+    margin: 0%;
+    padding-left: 1rem;
+}
 
-    .popular .box_anonce {
-        display: block;
-        grid-row-start: 100% 100% 100%;
-        grid-template-columns: 100%;
-    }
-    .stars{
-        box-sizing: border-box;
-        margin-top: 1rem;
-    }
-    .box_anonce il {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: none;
-        
-    }
+.description_h p {
+    margin: 0%;
+    padding-left: 1rem;
+}
+
+.cards_box {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding-left: 2rem;
+}
+
+.afficher_plus {
+    padding-left: 2rem;
 }
