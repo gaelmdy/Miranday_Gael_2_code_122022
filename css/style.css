@@ -1,3 +1,13 @@
+/* Base */
+
+html{
+    --color-grey: #F2F2F2;
+}
+
+body {
+    margin: 0;
+}
+
 * {
     box-sizing: border-box;
     font-family: "Raleway";
@@ -39,7 +49,7 @@ nav img {
     display: flex;
     flex-direction: row;
     gap: 2px;
-    display: block;
+    /* display: block; */
     flex-wrap: wrap;
     border: solid 2px transparent;
 }
@@ -68,7 +78,7 @@ nav img {
     .lien a {
         width: 49%;
         text-align: center;
-        border-bottom: 1px solid #d9d9d9;
+        border-bottom: 1px solid var(--color-grey);
     }
 
     .lien :hover {
@@ -95,13 +105,13 @@ nav img {
 
 .search a i {
     padding: 0.8rem;
-    background-color: #d9d9d9;
+    background-color: var(--color-grey);
     border-radius: 1rem 0 0 1rem;
 }
 
 .search input {
     padding-right: 6rem;
-    border: 4px #d9d9d9
+    border: 4px var(--color-grey);
 }
 
 .search button {
@@ -175,7 +185,7 @@ button span {
 
 .filter a {
     display: inline-block;
-    border: #d9d9d9 2px solid;
+    border: var(--color-grey) 2px solid;
     height: 50px;
     border-radius: 25px;
     display: flex;
@@ -270,7 +280,7 @@ button span {
     width: 24px;
     height: 24px;
     color: #0065fc;
-    border: solid 1px #d9d9d9;
+    border: solid 1px var(--color-grey);
     border-radius: 25px;
     display: flex;
     justify-content: center;
@@ -293,7 +303,7 @@ button span {
 }
 
 .city {
-    background-color: #d9d9d9;
+    background-color: var(--color-grey);
     flex-basis: 66%;
     border-radius: 25px;
 }
@@ -303,7 +313,7 @@ button span {
 }
 
 .popular {
-    background-color: #d9d9d9;
+    background-color: var(--color-grey);
     flex-basis: 33%;
     border-radius: 25px;
     display: flex;
@@ -330,7 +340,8 @@ button span {
     background-color: white;
     border-radius: 1rem;
     margin-bottom: 2rem;
-    box-shadow: 2px  2px 5px grey;
+    /* box-shadow: 2px  2px 5px grey; */
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .img_h img {
@@ -358,7 +369,7 @@ button span {
 }
 
 .star_grey {
-    color: #d9d9d9;
+    color: var(--color-grey);
 }
 
 .stars li {
@@ -426,7 +437,8 @@ button span {
     margin: 1rem;
     box-sizing: border-box;
     width: 90%;
-    box-shadow: 2px  2px 5px grey;
+    /* box-shadow: 2px  2px 5px grey; */
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .img_p {
