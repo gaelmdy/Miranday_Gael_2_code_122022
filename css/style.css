@@ -58,13 +58,6 @@ nav img {
     flex-wrap: wrap;
 }
 
-.lien {
-    display: flex;
-    flex-direction: row;
-    gap: 2px;
-    flex-wrap: wrap;
-    border: solid 2px transparent;
-}
 
 .lien a {
     padding: 16px;
@@ -80,18 +73,31 @@ nav img {
 
 @media(max-width:768px) {
     .logo {
-        margin-right: 42%;
+       display:flex;
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+       padding-left: 0%;
+       padding-right: 0%;
     }
 
     .lien {
         width: 100%;
         border-bottom: 1px solid var(--color-grey);
+        box-sizing: border-box;
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
-
     .lien a {
-        width: 49%;
-        text-align: center;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+    
 
     .lien :hover {
         border-top: 2px solid transparent;
@@ -123,7 +129,7 @@ nav img {
 
 .search input {
     padding-right: 6rem;
-    border: 4px var(--color-grey)
+    border: 1px solid var(--color-grey)
 }
 
 .search button {
@@ -151,6 +157,7 @@ button span {
 
     .search input {
         display: flex;
+        width: 90%;
     }
 
     .search button {
@@ -276,6 +283,9 @@ button span {
     align-items: center;
 
 }
+.info p {
+    padding-left: 5px;
+}
 
 
 
@@ -395,10 +405,12 @@ button span {
         flex-direction: column;
         align-items: center;
         padding-left: 0%;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .cards_h {
-        width: 90%;
+        width: 100%;
     }
 
     .img_h img {
@@ -484,6 +496,10 @@ button span {
     .description_p p {
         font-size: 12.8px;
     }
+
+    .img_p img {
+        width: 106px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -503,6 +519,9 @@ button span {
         font-size: 16px;
     }
 
+    .img_p img {
+        width: 137px;
+    }
 }
 
 /*activity*/
@@ -517,7 +536,6 @@ button span {
 
 .img_a {
     margin: 0%;
-    position: relative;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
@@ -525,25 +543,36 @@ button span {
     box-sizing: border-box;
     position: absolute;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    border-radius: 0 0 20px 20px ;
-    bottom: -32%;
+    border-radius: 0 0 20px 20px;
+    bottom: 0;
     background-color: white;
 }
 
+.lien_cards_a {
+    position: relative;
+}
+
 .img_a img {
-    Width: 302px;
+    Width: 100%;
     Height: 445px;
-    border-radius: 20px ;
+    border-radius: 20px;
 }
 
 
 .cards_a_box {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 0%;
+}
+
+.cards_a_box a {
+    width: 90%;
 }
 
 .description_a {
-    width: 302px;
+    width: 100%;
     height: 56px;
     padding-left: 5px;
     border-radius: 0 0 20px 20px;
@@ -555,17 +584,14 @@ button span {
     .img_a img {
         width: 182px;
         height: 211px;
-        border-top: transparent;
-        border-left: transparent;
-        border-right: transparent;
     }
 
     .description_a {
         font-size: 10px;
         width: 182px;
         height: 56px;
-        bottom: -40%;
-        
+        bottom: 0;
+        font-size: 90%;
     }
 
     .cards_a_box {
@@ -577,41 +603,37 @@ button span {
         margin-right: 20px;
     }
 
-    .cards_a {
-        width: 182px;
-        height: 267px;
+    .cards_a_box a {
+        width: 22%;
     }
+
+
 }
 
 @media (max-width: 768px) {
     .img_a img {
-        width: 90%;
+        width: 100%;
         height: 190px;
-        border-top: transparent;
-        border-left: transparent;
-        border-right: transparent;
     }
 
+    .lien_cards_a {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
     .cards_a_box {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25% 25% ;
+        margin: auto;
     }
-
-    .cards_a {
-        width: 70%;
-        display: block;
-        margin-bottom: 20px;
-        margin-top: 20px;
-        padding-left: 20px;
-
-
+    .cards_a_box a{
+        width: 100%;
     }
-
     .description_a {
         font-size: 16px;
-        width: 90%;
+        width: 100%;
+        padding-left: 2%;
     }
 }
 
