@@ -266,6 +266,9 @@ button span {
     .filter {
         margin-top: 10px;
     }
+    .ul_filter{
+        margin-top:16px ;
+    }
 }
 
 
@@ -316,7 +319,7 @@ button span {
 }
 
 .city h2 {
-    margin-left: 32px;
+    padding-left: 32px;
 }
 
 .popular {
@@ -385,11 +388,13 @@ button span {
 .description_h h3 {
     margin: 0%;
     padding-left: 16px;
+    font-size: 16px;
 }
 
 .description_h p {
     margin: 0%;
     padding-left: 16px;
+    font-size: 13px;
 }
 
 .cards_h_box {
@@ -401,6 +406,8 @@ button span {
 .afficher_plus {
     padding-left: 32px;
 }
+
+
 
 @media (max-width: 768px) {
     .city {
@@ -454,10 +461,10 @@ button span {
     box-sizing: border-box;
     width: 90%;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    margin-right: 40px;
+    margin-left: 23px;
 }
-.cards_p a article{
-    gap: 1px;
-}
+
 
 .img_p {
     width: 35%;
@@ -479,39 +486,35 @@ button span {
     align-items: flex-end;
     flex-direction: column;
     box-sizing: border-box;
+    width: 65%;
 }
 
 .description_p .stars {
     padding-left: 0%;
     margin-right: auto;
     margin-top: auto;
-    margin-bottom: 16px;
+    padding-bottom: 7px; 
 }
 
 .description_p p {
     margin-top:0% ;
     margin-right: auto;
-    font-size: 90%;
+    font-size: 13px;
 }
 .description_p h3{
-    margin-bottom: 1px;
-    font-size: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    margin-right: auto;
+    margin-bottom: 0px;
+    font-size: 16px;
 }
 
+
 @media (max-width: 992px) {
+    .popular{
+        margin-top: 53px;
+    }
     .cards_p_box {
         display: grid;
         grid-template-columns: 33% 33% 33%;
-    }
-
-    .description_p h3 {
-        font-size: 16px;
-    }
-
-    .description_p p {
-        font-size: 12px;
     }
 
     .img_p img {
@@ -523,29 +526,26 @@ button span {
 }
 
 @media (max-width: 768px) {
+    .popular{
+        margin-top: 0px;
+    }
     .cards_p_box {
         display: block;
     }
-
-    .description_p h3 {
-        font-size: 19px;
+    .description_p{
+        width: 65%;
     }
-
-    .description_p p {
-        font-size: 16px;
-    }
-
     .img_p img {
         width: 100%;
     }
     .img_p{
-        width:20%;
+        width: 35%;
     }
 }
 
 /*activity*/
 .activity h2 {
-    margin-left: 16px;
+    padding-left: 16px;
 }
 
 .a_list {
@@ -596,13 +596,20 @@ button span {
 .description_a {
     width: 100%;
     height: 56px;
-    padding-left: 5px;
     border-radius: 0 0 20px 20px;
-    margin-top: -10px;
+    margin: 0%;
+    padding-left: 19px;
+    padding-right: 27px;
+    
+}
+.description_a h3{
+    font-size: 16px;
 }
 
 @media (max-width: 992px) {
-
+    .activity{
+        margin-top: 70px;
+    }
     .img_a img {
         width: 182px;
         height: 211px;
@@ -644,7 +651,6 @@ button span {
     }
     
     .cards_a_box {
-        display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 25% 25% 25% 25% ;
         margin: auto;
