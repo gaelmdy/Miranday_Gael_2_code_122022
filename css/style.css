@@ -74,13 +74,13 @@ nav img {
 
 @media(max-width:768px) {
     .logo {
-       display:flex;
-       justify-content: center;
-       align-items: center;
-       width: 100%;
-       padding-left: 0%;
-       padding-right: 0%;
-       padding-top: 21px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-top: 21px;
     }
 
     .lien {
@@ -93,13 +93,14 @@ nav img {
         align-items: center;
         justify-content: space-between;
     }
+
     .lien a {
         width: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    
+
 
     .lien :hover {
         border-top: 2px solid transparent;
@@ -108,8 +109,9 @@ nav img {
 }
 
 /* header */
-.wrapper h1{
+.wrapper h1 {
     margin-top: 63px;
+    margin-bottom: 8px;
 }
 
 /* search */
@@ -126,19 +128,21 @@ nav img {
 }
 
 .search a i {
-    padding: 12.8px;
+    padding: 18px 16px 15px 16px;
     background-color: var(--color-grey);
-    border-radius: 20px 0 0 20px;
+    border-radius: 15px 0 0 15px;
 }
 
 .search input {
-    padding-right: 6rem;
+    padding-right: 100px;
+    font-size: 18px;
+    font-weight: 700;
     border: 1px solid var(--color-grey)
 }
 
 .search button {
     background-color: #0065fc;
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 15px 15px 0;
     border: 1px #0065fc;
     color: aliceblue;
 }
@@ -146,10 +150,13 @@ nav img {
 button i {
     color: transparent;
     font-size: 17px;
+
 }
 
 button span {
+    padding: 16px 14px 0px 14px;
     font-weight: bold;
+    font-size: 18px;
 }
 
 @media (max-width:768px) {
@@ -192,19 +199,19 @@ button span {
 
 .filter_box h2 {
     font-size: 18px;
+    padding-right: 17px;
 }
 
 .filter_box i {
     color: #0065fc;
     padding: 0 8px;
-
+    padding-left: 26px;
+    padding-right: 10px;
 }
 
 .filter {
-    display: flex;
     display: inline-block;
-    justify-content: center;
-    padding: 0 16px;
+    padding-right: 15px;
 }
 
 .filter a {
@@ -223,6 +230,8 @@ button span {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 0px;
+    margin: 0px;
 }
 
 .ul_filter span {
@@ -236,6 +245,13 @@ button span {
     border-radius: 25px;
 }
 
+@media (max-width:992px) {
+    .filter_box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
 @media (max-width:768px) {
     .filter_box {
         display: flex;
@@ -245,9 +261,13 @@ button span {
     .filter_box ul {
         display: flex;
         flex-wrap: wrap;
-        padding: 0%;
+        padding: 0px;
+        margin-top: 0px;
     }
 
+    .filter_box h2 {
+        margin-bottom: 0px;
+    }
 
     h2 {
         width: 100%;
@@ -255,7 +275,8 @@ button span {
 
     .filter {
         width: 49.5%;
-
+        padding-top: 20px;
+        margin-top: 0px;
     }
 
     .ul_filter {
@@ -263,12 +284,6 @@ button span {
         margin-top: 0%;
     }
 
-    .filter {
-        margin-top: 10px;
-    }
-    .ul_filter{
-        margin-top:16px ;
-    }
 }
 
 
@@ -277,8 +292,8 @@ button span {
     display: flex;
     justify-content: left;
     align-items: center;
-    margin-top: 54px;
-    margin-bottom: 39px;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 
@@ -293,6 +308,7 @@ button span {
     align-items: center;
 
 }
+
 .info p {
     padding-left: 5px;
 }
@@ -318,9 +334,6 @@ button span {
     border-radius: 20px;
 }
 
-.city h2 {
-    padding-left: 32px;
-}
 
 .popular {
     background-color: var(--color-grey);
@@ -344,12 +357,18 @@ button span {
     box-sizing: border-box;
 }
 
+.city h2 {
+    padding: 30px;
+    margin: 0%;
+}
+
 .cards_h {
     width: 84%;
     height: 90%;
     background-color: white;
     border-radius: 20px;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
+    margin-right: 30px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
@@ -404,7 +423,8 @@ button span {
 }
 
 .afficher_plus {
-    padding-left: 32px;
+    padding: 30px 30px 30px 30px;
+    margin: 0%;
 }
 
 
@@ -427,6 +447,8 @@ button span {
 
     .cards_h {
         width: 100%;
+        margin-right: 0px;
+        margin-bottom: 15px;
     }
 
     .img_h img {
@@ -444,8 +466,11 @@ button span {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 30px;
+}
+
+.title_p h2 {
+    margin: 0px;
 }
 
 .graph {
@@ -457,14 +482,14 @@ button span {
     height: 144px;
     background-color: white;
     border-radius: 20px;
-    margin: 16px;
     box-sizing: border-box;
-    width: 90%;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    margin-right: 40px;
-    margin-left: 23px;
+    margin-bottom: 30px;
 }
 
+.cards_p_box {
+    padding: 0px 30px ;
+}
 
 .img_p {
     width: 35%;
@@ -481,7 +506,7 @@ button span {
 }
 
 .description_p {
-    padding-left: 10px;
+    padding-left: 15px;
     display: flex;
     align-items: flex-end;
     flex-direction: column;
@@ -493,15 +518,16 @@ button span {
     padding-left: 0%;
     margin-right: auto;
     margin-top: auto;
-    padding-bottom: 7px; 
+    padding-bottom: 7px;
 }
 
 .description_p p {
-    margin-top:0% ;
+    margin-top: 0%;
     margin-right: auto;
     font-size: 13px;
 }
-.description_p h3{
+
+.description_p h3 {
     margin-right: auto;
     margin-bottom: 0px;
     font-size: 16px;
@@ -509,50 +535,59 @@ button span {
 
 
 @media (max-width: 992px) {
-    .popular{
+    .popular {
         margin-top: 53px;
     }
+
     .cards_p_box {
-        display: grid;
-        grid-template-columns: 33% 33% 33%;
+        display: flex;
+        gap: 20px;
     }
 
     .img_p img {
         width: 90px;
     }
-    .img_p{
-        width:35%;
-     }  
+
+    .img_p {
+        width: 35%;
+    }
 }
 
 @media (max-width: 768px) {
-    .popular{
+    .popular {
         margin-top: 0px;
     }
+
     .cards_p_box {
         display: block;
+        padding: 0px 20px;
     }
-    .description_p{
+
+    .description_p {
         width: 65%;
     }
+
     .img_p img {
         width: 100%;
     }
-    .img_p{
+
+    .img_p {
         width: 35%;
     }
 }
 
 /*activity*/
 .activity h2 {
-    padding-left: 16px;
+    padding: 30px;
+    margin:0px;
+    padding-top:0px;
 }
 
 .a_list {
     max-width: 1400px;
     margin: auto;
-    margin-top: 60px;
-    margin-bottom: 61px;
+    margin-top: 65px;
+    margin-bottom: 65px;
 }
 
 .img_a {
@@ -581,9 +616,8 @@ button span {
 
 
 .cards_a_box {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-gap: 1rem;
+    display: flex;
+    gap: 30px;
     padding-left: 20px;
     padding-right: 20px;
     margin-right: 0%;
@@ -595,45 +629,45 @@ button span {
 
 .description_a {
     width: 100%;
-    height: 56px;
+    height: 70px;
     border-radius: 0 0 20px 20px;
     margin: 0%;
-    padding-left: 19px;
-    padding-right: 27px;
-    
+    padding: 20px 19px;
+
 }
-.description_a h3{
+
+.description_a h3 {
     font-size: 16px;
+    margin: 0px;
 }
 
 @media (max-width: 992px) {
-    .activity{
+    .activity {
         margin-top: 70px;
     }
+
     .img_a img {
-        width: 182px;
+        width: 100%;
         height: 211px;
     }
 
     .description_a {
         font-size: 10px;
-        width: 182px;
-        height: 56px;
+        width: 100%;
+        height: 70px;
         bottom: 0;
         font-size: 90%;
     }
 
     .cards_a_box {
-        display: flex;
-        flex-wrap: wrap;
+        
         justify-content: space-between;
         align-items: center;
-        margin-top: 40px;
-        margin-right: 20px;
+        
     }
 
     .cards_a_box a {
-        width: 22%;
+        width: 21%;
     }
 
 
@@ -649,15 +683,19 @@ button span {
         padding-top: 20px;
         padding-bottom: 20px;
     }
-    
+
     .cards_a_box {
-        grid-template-columns: 100%;
-        grid-template-rows: 25% 25% 25% 25% ;
         margin: auto;
+        flex-wrap: wrap;
+        gap:0px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
-    .cards_a_box a{
+
+    .cards_a_box a {
         width: 100%;
     }
+
     .description_a {
         font-size: 16px;
         width: 100%;
@@ -673,7 +711,8 @@ button span {
     background-color: var(--color-grey);
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    padding-left: 70px; ;
+    padding: 20px ;
+    ;
 }
 
 .propos li {
@@ -730,6 +769,6 @@ button span {
 @media (max-width: 768px) {
     .container_f {
         grid-template-columns: 1fr;
-        padding-left: 30px;
+        padding: 30px;
     }
 }
