@@ -114,8 +114,13 @@ nav img {
 
 /* header */
 .wrapper h1 {
-    margin-top: 63px;
+    margin-top: 60px;
     margin-bottom: 8px;
+}
+@media (max-width:768px){
+   .wrapper h1 {
+    margin-top: 30px;
+   }
 }
 
 /* search */
@@ -271,16 +276,21 @@ button span {
         display: flex;
         flex-wrap: wrap;
     }
-
+    .filter_box i {
+        padding-left: 0%;
+        display: flex;
+        justify-content: flex-start;
+    }
     .filter_box ul {
         display: flex;
         flex-wrap: wrap;
         padding: 0px;
         margin-top: 0px;
+        gap: 14px;
     }
 
     .filter_box h2 {
-        margin-bottom: 0px;
+        margin-bottom: 20px;
     }
 
     h2 {
@@ -288,12 +298,16 @@ button span {
     }
 
     .filter {
-        width: 49.5%;
-        padding-top: 20px;
+        width: calc(50% - 7px);
         margin-top: 0px;
         font-size: 11px;
+        padding-right: 0;
     }
-
+    .filter a 
+{
+   justify-content: flex-start;
+   padding: 10px; 
+}
 }
 
 
@@ -452,6 +466,7 @@ button span {
     .city {
         background-color: white;
         order: 1;
+        padding: 20px;
     }
 
     .cards_h_box {
@@ -701,8 +716,8 @@ button span {
         margin: auto;
         flex-wrap: wrap;
         gap:0px;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .cards_a_box a {
@@ -788,6 +803,26 @@ footer{
     }
     .container_f {
         grid-template-columns: 1fr;
-        padding: 30px;
+        padding: 20px;
+    }
+    .propos h2 {
+        padding-left: 0px;
+    }
+    
+    .nos_h h2 {
+        padding-left: 0px;
+    }
+    
+    .assistance h2 {
+        padding-left: 0px;
+    }
+    .propos ul {
+        padding: 0px;
+    }
+    .nos_h ul {
+        padding: 0px;
+    }
+    .assistance ul {
+        padding: 0px;
     }
 }
