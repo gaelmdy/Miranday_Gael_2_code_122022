@@ -167,10 +167,18 @@ button span {
     font-weight: bold;
     font-size: 18px;
 }
+@media (max-width: 992px){
+    .wrapper h1{
+        font-size: 22px;
+    }
+}
 
 @media (max-width:768px) {
     .wrapper{
         padding: 0px 20px;
+    }
+    .wrapper h1{
+        font-size: 22px;
     }
     .search {
         display: flex;
@@ -578,6 +586,12 @@ button span {
         width: 35%;
         overflow: hidden;
     }
+    .description_p h3 {
+        font-size: 14px;
+    }
+    .description_p p {
+        font-size: 11px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -601,6 +615,12 @@ button span {
 
     .img_p {
         width: 35%;
+    }
+    .description_p h3 {
+        font-size: 16px;
+    }
+    .description_p p {
+        font: size 13px; ;
     }
 }
 
@@ -682,6 +702,7 @@ button span {
         width: 100%;
         bottom: 0;
         font-size: 90%;
+        padding: 25px 19px;
     }
 
     .cards_a_box {
@@ -694,7 +715,9 @@ button span {
     .cards_a_box a {
         width: 21%;
     }
-
+    .description_a h3 {
+        font-size: 13px;
+    }
 
 }
 
@@ -728,6 +751,9 @@ button span {
         font-size: 16px;
         width: 100%;
         padding-left: 2%;
+    }
+    .description_a h3{
+        font-size: 16px;
     }
 }
 
